@@ -39,7 +39,7 @@ var Application = React.createClass({
     return (
       <div>
         <h1>Hello World!</h1>
-        <h2>You can edit stuff in here and it will hot update</h2>
+        <h2>You can edit stuff in here and it will hot update.</h2>
         <button onClick={this._sendMessage}>Send Message</button>
 
         <SubComponent message={this.state.message} />
@@ -49,4 +49,6 @@ var Application = React.createClass({
 
 });
 
-React.renderComponent(Application(), document.body);
+React.render(<Application />, document.body);
+
+module.exports = Application;

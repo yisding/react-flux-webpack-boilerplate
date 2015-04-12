@@ -19,8 +19,9 @@
     "react-hot-loader": "^1.2.4"
   },
   "dependencies": {
-    "flux": "^2.0.0",
+    "flux": "^2.0.1",
     "react": "^0.13.1",
-    "lodash": "^2.4.1"
+    "lodash": "^2.4.1",
+    "object-assign": "^2.0.0"
   }
 }

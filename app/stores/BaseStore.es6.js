@@ -2,7 +2,6 @@ var _ = require('lodash');
 
 var AppDispatcher = require('../AppDispatcher');
 var EventEmitter = require('events').EventEmitter;
-var copyProperties = require('react/lib/copyProperties');
 
 var CHANGE_EVENT = 'change';
 
@@ -46,7 +45,7 @@ class BaseStore {
   }
 }
 
-copyProperties(BaseStore.prototype, EventEmitter.prototype);
+_.assign(BaseStore.prototype, EventEmitter.prototype);
 
 
 module.exports = BaseStore;
